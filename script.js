@@ -1,24 +1,22 @@
 const phone = document.querySelector("#phone-number");
-const email = document.querySelector("#email");
+const email = document.querySelector("#contact-email");
 const alert = document.querySelector("#alert");
 
-phone.addEventListener("click", () => {
-  console.log("phone copied");
-  navigator.clipboard.writeText("+380 95 534 2870");
-  alert.innerHTML = "phone copied";
+function copyToClipboard(element, message) {
+  navigator.clipboard.writeText(element.textContent);
+  alert.textContent = message;
   alert.classList.add("show");
 
   setTimeout(() => {
     alert.classList.remove("show");
   }, 1000);
+}
+
+phone.addEventListener("click", () => {
+  copyToClipboard(phone, "phone copied");
 });
 
 email.addEventListener("click", () => {
-  navigator.clipboard.writeText("galenko.vladislav@gmail.com");
-  alert.innerHTML = "email copied";
-  alert.classList.add("show");
-
-  setTimeout(() => {
-    alert.classList.remove("show");
-  }, 1000);
+  copyToClipboard(email, "email copied");
 });
+
