@@ -86,6 +86,29 @@ body {
   color: var(--muted);
 }
 
+#phone-number:hover, #email:hover {
+  text-decoration: underline;
+}
+
+#alert {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000093;
+  color: var(--text);
+  padding: 10px 18px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+}
+
+#alert.show {
+  opacity: 10;
+  pointer-events: auto;
+}
+
 a.contact-btn {
   display: inline-block;
   margin: 0 auto;
