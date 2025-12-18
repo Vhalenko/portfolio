@@ -10,6 +10,7 @@ html {
   --muted: #aaa;
   --accent: #0B64F4;
   --hover: rgba(108, 99, 255, 0.85);
+  --shadow: rgba(0, 0, 0, 0.2);
   --radius: 10px;
 }
 
@@ -160,6 +161,7 @@ p {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 4px 25px var(--shadow);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -299,11 +301,12 @@ p.contact {
 .contact-form {
   max-width: 700px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
+  border: var(--border) solid 1px;
   padding: 30px;
   border-radius: 16px;
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 25px var(--shadow);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -323,8 +326,8 @@ p.contact {
   padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.02);
-  color: #e5e7eb;
+  background: var(--bg);
+  color: var(--muted);
   font-size: 15px;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
