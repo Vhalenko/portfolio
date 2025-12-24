@@ -2,15 +2,37 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #9ec3ff;
+  color: #ffffff;      
+}
+
 :root {
+  /* Фон сайта */
   --bg: #0f0f0f;
+
+  /* Фон карточек */
   --card-bg: #1a1a1a;
+
+  /* КАК его нахуй граница??? */
   --border: #2a2a2a;
+
+  /* Текст */
   --text: #fff;
+
+  /* Текст но такой крч бледный */
   --muted: #aaa;
+
+  /* Акцентный цвет */
   --accent: #0B64F4;
+
+  /* Цвет анимаций */
   --hover: rgba(108, 99, 255, 0.85);
+
+  /* Тень */
   --shadow: rgba(0, 0, 0, 0.2);
+
+  /* Округление */
   --radius: 10px;
 }
 
@@ -102,7 +124,7 @@ body {
   color: var(--text);
   padding: 10px 18px;
   font-weight: 300;
-  border-radius: 10px;
+  border-radius: var(--radius);
   transition: opacity 0.4s ease;
 }
 
@@ -120,15 +142,14 @@ body {
   border: none;
   padding: 10px 18px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: var(--radius);
   color: var(--text);
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition: background 0.2s;
 }
 
 .contact-btn:hover {
   background: var(--hover);
-  transform: translateY(-1px);
 }
 
 h1, h2, h3 {
