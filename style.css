@@ -344,6 +344,7 @@ p.contact {
 
 .contact-form input,
 .contact-form textarea {
+  font-family: system-ui, sans-serif;
   padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.08);
