@@ -47,7 +47,12 @@
         <div class="centered">
           <h2>Vladyslav Halenko</h2>
           <p>
-            Hello, I am an experienced Video Editor specialized in motion graphics. I have completed several freelance projects independently with a responsible attitude and adaptability. Learning and improving drives me to take all projects seriously and do the best that I possibly can. If you need a motivated Video Editor to help you turn your ideas into reality, you’ve come to the right place.
+            Hello, I am an experienced Video Editor specialized in motion
+            graphics. I have completed several freelance projects independently
+            with a responsible attitude and adaptability. Learning and improving
+            drives me to take all projects seriously and do the best that I
+            possibly can. If you need a motivated Video Editor to help you turn
+            your ideas into reality, you’ve come to the right place.
           </p>
           <a href="#contact" class="contact-btn">Contact me</a>
         </div>
@@ -56,7 +61,7 @@
       <h2 id="projects">Selected projects</h2>
       <div class="grid">
         <!-- Repeat these cards and replace sources -->
-         <article class="card">
+        <article class="card">
           <a
             href="https://youtu.be/UxMfS2gul18"
             target="_blank"
@@ -75,7 +80,10 @@
           <h3>YouTube Video</h3>
 
           <p>
-            Dynamic YouTube video with 3D animation and motion graphics, cinematic color grading, and immersive sound design. UI elements were recreated and animated using Figma and Adobe Illustrator for a professional, platform-accurate presentation.
+            Dynamic YouTube video with 3D animation and motion graphics,
+            cinematic color grading, and immersive sound design. UI elements
+            were recreated and animated using Figma and Adobe Illustrator for a
+            professional, platform-accurate presentation.
           </p>
 
           <div class="meta">
@@ -168,17 +176,22 @@
         </article>
 
         <article class="card">
+          <div class="image-wrapper">
             <img
               src="assets/images/youtube1-thumbnail.png"
-              alt="TikTok video preview"
+              alt="YouTube thumbnail preview"
               loading="lazy"
+              class="expandable"
             />
-          </a>
+            <span class="expand-icon" aria-hidden="true">⤢</span>
+          </div>
 
           <h3>YouTube Thumbnail</h3>
 
           <p>
-            Designed eye-catching YouTube thumbnails using Adobe Photoshop, focusing on strong visuals, clear typography, and composition that attracts clicks and reflects the video’s content and branding.
+            Designed eye-catching YouTube thumbnails using Adobe Photoshop,
+            focusing on strong visuals, clear typography, and composition that
+            attracts clicks and reflects the video’s content and branding.
           </p>
 
           <div class="meta">
@@ -224,15 +237,19 @@
         <aside class="testimonials">
           <h2>Testimonials</h2>
           <blockquote>
-            "Vladyslav created engaging TikTok edits that performed extremely well. One of the videos reached over 80K views, helping boost my reach and engagement." — Aisana
+            "Vladyslav created engaging TikTok edits that performed extremely
+            well. One of the videos reached over 80K views, helping boost my
+            reach and engagement." — Aisana
           </blockquote>
           <blockquote>
-            "Vladyslav edited a dynamic and engaging YouTube video that kept viewers interested from start to finish. The quality and pacing were spot on."
-            — Aisana
+            "Vladyslav edited a dynamic and engaging YouTube video that kept
+            viewers interested from start to finish. The quality and pacing were
+            spot on." — Aisana
           </blockquote>
           <blockquote>
-            "Vlad helped find the perfect editing style for my content and created a great YouTube intro that really elevated my channel."
-            — Dan
+            "Vlad helped find the perfect editing style for my content and
+            created a great YouTube intro that really elevated my channel." —
+            Dan
           </blockquote>
         </aside>
       </div>
@@ -277,8 +294,14 @@
         </div>
       </form>
       <footer>
-        <small>© Vladyslav Halenko — Video Editor • Built with HTML &amp; CSS</small>
+        <small
+          >© Vladyslav Halenko — Video Editor • Built with HTML &amp; CSS</small
+        >
       </footer>
+      <div id="image-modal" class="image-modal" aria-hidden="true">
+        <img id="modal-image" alt="Expanded preview" />
+      </div>
+
       <p id="alert"></p>
     </main>
 

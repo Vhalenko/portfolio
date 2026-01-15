@@ -279,6 +279,38 @@ p {
   font-size: 0.8rem;
 }
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.expandable {
+  width: 100%;
+  display: block;
+}
+
+.expand-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.image-wrapper:hover .expand-icon {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 /* SKILLS AND TESTIMONIALS */
 .split {
   display: flex;
@@ -383,6 +415,37 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* FULLSCREEN */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.image-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.image-modal.show img {
+  transform: scale(1);
 }
 
 /* MOBILE */
