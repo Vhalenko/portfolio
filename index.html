@@ -17,9 +17,15 @@
         <img src="https://flagcdn.com/gb.svg" alt="Great Britan" />
       </div>
       <div class="dropdown-content" id="flag-list">
-        <button onclick="setLanguage('en')"><img src="https://flagcdn.com/gb.svg" alt="Great Britan" /></button>
-        <button onclick="setLanguage('nl')"><img src="https://flagcdn.com/nl.svg" alt="Netherlands" /></button>
-        <button onclick="setLanguage('ru')"><img src="https://flagcdn.com/ru.svg" alt="Russia" /></button>
+        <button onclick="setLanguage('en')">
+          <img src="https://flagcdn.com/gb.svg" alt="Great Britan" />
+        </button>
+        <button onclick="setLanguage('nl')">
+          <img src="https://flagcdn.com/nl.svg" alt="Netherlands" />
+        </button>
+        <button onclick="setLanguage('ru')">
+          <img src="https://flagcdn.com/ru.svg" alt="Russia" />
+        </button>
       </div>
     </div>
     <main class="container">
@@ -50,12 +56,12 @@
               >
             </div>
             <div>
-              <strong data-i18n="birthday">Birthday:</strong>&nbsp;August 30,
-              2005
+              <strong data-i18n="birthday_label">Birthday:</strong>&nbsp;
+              <span data-i18n="birthday_value">August 30, 2005</span>
             </div>
             <div>
-              <strong data-i18n="location">Location:</strong>&nbsp;Haarlem,
-              Netherlands
+              <strong data-i18n="location_label">Location:</strong>&nbsp;
+              <span data-i18n="location_value">Haarlem, Netherlands</span>
             </div>
           </div>
         </div>
@@ -237,46 +243,46 @@
             <div class="skill">DaVinci Resolve</div>
             <div class="skill">Figma</div>
             <div class="skill">Photoshop</div>
-            <div class="skill">Codecs & Formats</div>
-            <div class="skill">Color Grading</div>
-            <div class="skill">Sound Design</div>
-            <div class="skill">Workflow Optimization</div>
-            <div class="skill">Proxies</div>
+            <div class="skill" data-i18n="codecs_and_formats">Codecs & Formats</div>
+            <div class="skill" data-i18n="color_grading">Color Grading</div>
+            <div class="skill" data-i18n="sound_design">Sound Design</div>
+            <div class="skill" data-i18n="workflow_optimization">Workflow Optimization</div>
+            <div class="skill" data-i18n="proxies">Proxies</div>
           </div>
 
           <h2 data-i18n="creative_skills">Creative Skills</h2>
           <div class="skill-list">
-            <div class="skill">Motion Design</div>
-            <div class="skill">Storyletting</div>
-            <div class="skill">Composition</div>
+            <div class="skill" data-i18n="motion_design">Motion Design</div>
+            <div class="skill" data-i18n="storyletting">Storyletting</div>
+            <div class="skill" data-i18n="composition">Composition</div>
           </div>
 
           <h2 data-i18n="soft_skills">Soft SKills</h2>
           <div class="skill-list">
-            <div class="skill">Reliability</div>
-            <div class="skill">Communication</div>
-            <div class="skill">Independence</div>
-            <div class="skill">Flexibility</div>
-            <div class="skill">Problem-solving</div>
-            <div class="skill">Collaboration</div>
+            <div class="skill" data-i18n="reliability">Reliability</div>
+            <div class="skill" data-i18n="communication">Communication</div>
+            <div class="skill" data-i18n="independence">Independence</div>
+            <div class="skill" data-i18n="flexibility">Flexibility</div>
+            <div class="skill" data-i18n="problem_solving">Problem-solving</div>
+            <div class="skill" data-i18n="collaboration">Collaboration</div>
           </div>
         </section>
 
         <aside class="testimonials">
           <h2 data-i18n="testimonials">Testimonials</h2>
           <blockquote data-i18n="testimonial_1">
-            'Vladyslav created engaging TikTok edits that performed extremely
+            «Vladyslav created engaging TikTok edits that performed extremely
             well. One of the videos reached over 80K views, helping boost my
-            reach and engagement.'' — Aisana
+            reach and engagement.» — Aisana
           </blockquote>
           <blockquote data-i18n="testimonial_2">
-            'Vladyslav edited a dynamic and engaging YouTube video that kept
+            «Vladyslav edited a dynamic and engaging YouTube video that kept
             viewers interested from start to finish. The quality and pacing were
-            spot on.'' — Aisana
+            spot on.» — Aisana
           </blockquote>
           <blockquote data-i18n="testimonial_3">
-            'Vlad helped find the perfect editing style for my content and
-            created a great YouTube intro that really elevated my channel.'' —
+            «Vlad helped find the perfect editing style for my content and
+            created a great YouTube intro that really elevated my channel.» —
             Dan
           </blockquote>
         </aside>
@@ -304,6 +310,7 @@
           name="name"
           id="name"
           placeholder="Your name"
+          data-i18n-placeholder="form_name"
           required
         />
         <input
@@ -311,16 +318,20 @@
           name="email"
           id="email"
           placeholder="Your email"
+          data-i18n-placeholder="form_email"
           required
         />
         <textarea
           id="message"
           name="message"
           placeholder="Your message"
+          data-i18n-placeholder="form_message"
           required
         ></textarea>
         <div style="display: flex; gap: 8px; align-items: center">
-          <button class="contact-btn" type="submit" data-i18n="send_message">Send message</button>
+          <button class="contact-btn" type="submit" data-i18n="send_message">
+            Send message
+          </button>
         </div>
       </form>
       <footer>
