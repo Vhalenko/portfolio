@@ -12,6 +12,16 @@
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
   </head>
   <body>
+    <div class="dropdown">
+      <div class="dropdown-btn" id="selected-flag">
+        <img src="https://flagcdn.com/gb.svg" alt="Great Britan" />
+      </div>
+      <div class="dropdown-content" id="flag-list">
+        <button onclick="setLanguage('en')"><img src="https://flagcdn.com/gb.svg" alt="Great Britan" /></button>
+        <button onclick="setLanguage('nl')"><img src="https://flagcdn.com/nl.svg" alt="Netherlands" /></button>
+        <button onclick="setLanguage('ru')"><img src="https://flagcdn.com/ru.svg" alt="Russia" /></button>
+      </div>
+    </div>
     <main class="container">
       <section class="about" id="about">
         <div class="centered">
@@ -26,27 +36,33 @@
           </div>
           <div class="contact" aria-label="Contact info">
             <div>
-              <strong>Phone:</strong>&nbsp;<span
+              <strong data-i18n="phone">Phone:</strong>&nbsp;<span
                 id="phone-number"
                 style="cursor: pointer"
                 >+380 95 534 2870</span
               >
             </div>
             <div>
-              <strong>Email:</strong>&nbsp;<span
+              <strong data-i18n="email">Email:</strong>&nbsp;<span
                 id="contact-email"
                 style="cursor: pointer"
                 >galenko.vladislav@gmail.com</span
               >
             </div>
-            <div><strong>Birthday:</strong>&nbsp;August 30, 2005</div>
-            <div><strong>Location:</strong>&nbsp;Haarlem, Netherlands</div>
+            <div>
+              <strong data-i18n="birthday">Birthday:</strong>&nbsp;August 30,
+              2005
+            </div>
+            <div>
+              <strong data-i18n="location">Location:</strong>&nbsp;Haarlem,
+              Netherlands
+            </div>
           </div>
         </div>
 
         <div class="centered">
-          <h2>Vladyslav Halenko</h2>
-          <p>
+          <h2 data-i18n="name">Vladyslav Halenko</h2>
+          <p data-i18n="about_text">
             Hello, I am an experienced Video Editor specialized in motion
             graphics. I have completed several freelance projects independently
             with a responsible attitude and adaptability. Learning and improving
@@ -54,11 +70,13 @@
             possibly can. If you need a motivated Video Editor to help you turn
             your ideas into reality, you’ve come to the right place.
           </p>
-          <a href="#contact" class="contact-btn">Contact me</a>
+          <a href="#contact" class="contact-btn" data-i18n="contact_me"
+            >Contact me</a
+          >
         </div>
       </section>
 
-      <h2 id="projects">Selected projects</h2>
+      <h2 id="projects" data-i18n="projects_title">Selected projects</h2>
       <div class="grid">
         <!-- Repeat these cards and replace sources -->
         <article class="card">
@@ -77,9 +95,9 @@
             <span class="play-icon" aria-hidden="true"></span>
           </a>
 
-          <h3>YouTube Video</h3>
+          <h3 data-i18n="first_project_title">YouTube Video</h3>
 
-          <p>
+          <p data-i18n="first_project_desc">
             Dynamic YouTube video with 3D animation and motion graphics,
             cinematic color grading, and immersive sound design. UI elements
             were recreated and animated using Figma and Adobe Illustrator for a
@@ -87,7 +105,9 @@
           </p>
 
           <div class="meta">
-            <small class="tag">Freelance Project</small>
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
           </div>
         </article>
 
@@ -107,15 +127,17 @@
             <span class="play-icon" aria-hidden="true"></span>
           </a>
 
-          <h3>Reels / TikTok Motion Edit</h3>
+          <h3 data-i18n="second_project_title">Reels / TikTok Motion Edit</h3>
 
-          <p>
+          <p data-i18n="second_project_desc">
             Eye-catching short-form video combining 3D animation, motion
             graphics, cinematic color grading, and punchy sound design.
           </p>
 
           <div class="meta">
-            <small class="tag">Freelance Project</small>
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
           </div>
         </article>
 
@@ -135,15 +157,17 @@
             <span class="play-icon" aria-hidden="true"></span>
           </a>
 
-          <h3>Reels / TikTok Motion Edit</h3>
+          <h3 data-i18n="third_project_title">Reels / TikTok Motion Edit</h3>
 
-          <p>
+          <p data-i18n="third_project_desc">
             Eye-catching short-form video combining 3D animation, motion
             graphics, cinematic color grading, and punchy sound design.
           </p>
 
           <div class="meta">
-            <small class="tag">Freelance Project</small>
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
           </div>
         </article>
 
@@ -163,15 +187,17 @@
             <span class="play-icon" aria-hidden="true"></span>
           </a>
 
-          <h3>Reels / TikTok Motion Edit</h3>
+          <h3 data-i18n="fourth_project_title">Reels / TikTok Motion Edit</h3>
 
-          <p>
+          <p data-i18n="fourth_project_desc">
             Eye-catching short-form video combining 3D animation, motion
             graphics, cinematic color grading, and punchy sound design.
           </p>
 
           <div class="meta">
-            <small class="tag">Freelance Project</small>
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
           </div>
         </article>
 
@@ -186,23 +212,25 @@
             <span class="expand-icon" aria-hidden="true">⤢</span>
           </div>
 
-          <h3>YouTube Thumbnail</h3>
+          <h3 data-i18n="fifth_project_title">YouTube Thumbnail</h3>
 
-          <p>
+          <p data-i18n="fifth_project_desc">
             Designed eye-catching YouTube thumbnails using Adobe Photoshop,
             focusing on strong visuals, clear typography, and composition that
             attracts clicks and reflects the video’s content and branding.
           </p>
 
           <div class="meta">
-            <small class="tag">Freelance Project</small>
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
           </div>
         </article>
       </div>
 
       <div class="split">
         <section class="skills">
-          <h2>Technical Skills</h2>
+          <h2 data-i18n="technical_skills">Technical Skills</h2>
           <div class="skill-list" style="margin-top: 10px">
             <div class="skill">Adobe Premiere Pro</div>
             <div class="skill">After Effects</div>
@@ -216,14 +244,14 @@
             <div class="skill">Proxies</div>
           </div>
 
-          <h2>Creative Skills</h2>
+          <h2 data-i18n="creative_skills">Creative Skills</h2>
           <div class="skill-list">
             <div class="skill">Motion Design</div>
             <div class="skill">Storyletting</div>
             <div class="skill">Composition</div>
           </div>
 
-          <h2>Soft SKills</h2>
+          <h2 data-i18n="soft_skills">Soft SKills</h2>
           <div class="skill-list">
             <div class="skill">Reliability</div>
             <div class="skill">Communication</div>
@@ -235,27 +263,29 @@
         </section>
 
         <aside class="testimonials">
-          <h2>Testimonials</h2>
-          <blockquote>
-            "Vladyslav created engaging TikTok edits that performed extremely
+          <h2 data-i18n="testimonials">Testimonials</h2>
+          <blockquote data-i18n="testimonial_1">
+            'Vladyslav created engaging TikTok edits that performed extremely
             well. One of the videos reached over 80K views, helping boost my
-            reach and engagement." — Aisana
+            reach and engagement.'' — Aisana
           </blockquote>
-          <blockquote>
-            "Vladyslav edited a dynamic and engaging YouTube video that kept
+          <blockquote data-i18n="testimonial_2">
+            'Vladyslav edited a dynamic and engaging YouTube video that kept
             viewers interested from start to finish. The quality and pacing were
-            spot on." — Aisana
+            spot on.'' — Aisana
           </blockquote>
-          <blockquote>
-            "Vlad helped find the perfect editing style for my content and
-            created a great YouTube intro that really elevated my channel." —
+          <blockquote data-i18n="testimonial_3">
+            'Vlad helped find the perfect editing style for my content and
+            created a great YouTube intro that really elevated my channel.'' —
             Dan
           </blockquote>
         </aside>
       </div>
 
-      <h2 id="contact" style="margin-top: 18px">Contact</h2>
-      <p class="contact">
+      <h2 id="contact" style="margin-top: 18px" data-i18n="contact_title">
+        Contact
+      </h2>
+      <p class="contact" data-i18n="contact_text">
         Have a question or an idea you'd like to discuss? Feel free to reach out
         using the form below.
       </p>
@@ -290,11 +320,11 @@
           required
         ></textarea>
         <div style="display: flex; gap: 8px; align-items: center">
-          <button class="contact-btn" type="submit">Send message</button>
+          <button class="contact-btn" type="submit" data-i18n="send_message">Send message</button>
         </div>
       </form>
       <footer>
-        <small
+        <small data-i18n="footer_text"
           >© Vladyslav Halenko — Video Editor • Built with HTML &amp; CSS</small
         >
       </footer>
@@ -305,6 +335,7 @@
       <p id="alert"></p>
     </main>
 
+    <script src="translation.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
