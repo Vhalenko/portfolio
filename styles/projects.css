@@ -1,0 +1,149 @@
+.video-card {
+  position: relative;
+  max-height: 20rem;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card-bg);
+  display: block;
+}
+
+.video-card:hover img {
+  transform: scale(1.06);
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+/* Play button */
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.play-icon::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 50%;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.play-icon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 14px solid var(--muted);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 4px;
+}
+
+/* Hover effects */
+
+.video-card:hover .play-icon::before {
+  background: var(--hover);
+  transform: scale(1.05);
+}
+
+/* Text */
+.card h3 {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin: 4px 0 0;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  flex-grow: 1;
+}
+
+/* Meta */
+.meta {
+  margin-top: 6px;
+}
+
+.tag {
+  background: var(--accent);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.expandable {
+  width: 100%;
+  display: block;
+}
+
+.expand-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.image-wrapper:hover .expand-icon {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* FULLSCREEN */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.image-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.image-modal.show img {
+  transform: scale(1);
+}

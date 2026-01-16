@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #9ec3ff;
+  color: #ffffff;      
+}
+
+:root {
+  /* Фон сайта */
+  --bg: #0f0f0f;
+
+  /* Фон карточек */
+  --card-bg: #1a1a1a;
+
+  /* КАК его нахуй граница??? */
+  --border: #2a2a2a;
+
+  /* Текст */
+  --text: #fff;
+
+  /* Текст но такой крч бледный */
+  --muted: #aaa;
+
+  /* Акцентный цвет */
+  --accent: #0B64F4;
+
+  /* Цвет анимаций */
+  --hover: rgba(108, 99, 255, 0.85);
+
+  /* Тень */
+  --shadow: rgba(0, 0, 0, 0.2);
+
+  /* Округление */
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}

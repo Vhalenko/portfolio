@@ -1,0 +1,77 @@
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: inline-block;
+  z-index: 1000;
+}
+
+/* Button */
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center content horizontally */
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 60px; /* ensures dropdown content can match width */
+}
+
+.dropdown-btn img {
+  width: 32px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto; /* center image inside button */
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none; /* toggled by JS */
+  position: absolute;
+  top: 110%;
+  left: 0; /* align with button */
+  width: 100%; /* match dropdown-btn width */
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+/* Dropdown items */
+.dropdown-content button {
+  width: 100%; /* full width */
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center; /* center content horizontally */
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-content button img {
+  width: 32px;
+  height: 20px;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto; /* center image inside button */
+}
+
+/* Hover effect */
+.dropdown-content button:hover {
+  background-color: var(--hover);
+  color: #fff;
+}
