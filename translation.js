@@ -17,7 +17,7 @@ const translations = {
     /* Projects */
     projects_title: "Selected projects",
 
-    fistt_project_title: "YouTube Video",
+    first_project_title: "YouTube Video",
     first_project_desc:
       "Dynamic YouTube video with 3D animation and motion graphics, cinematic color grading, and immersive sound design. UI elements were recreated and animated using Figma and Adobe Illustrator for a professional, platform-accurate presentation.",
 
@@ -105,7 +105,7 @@ const translations = {
     /* Projects */
     projects_title: "Избранные проекты",
 
-    fistt_project_title: "Видео для YouTube",
+    first_project_title: "Видео для YouTube",
     first_project_desc:
       "Динамичное видео для YouTube с использованием 3D-анимации и моушн-графики, кинематографической цветокоррекции и насыщенного звукового дизайна. Элементы интерфейса были воссозданы и анимированы в Figma и Adobe Illustrator для точного соответствия платформе.",
 
@@ -193,7 +193,7 @@ const translations = {
     /* Projects */
     projects_title: "Geselecteerde projecten",
 
-    fistt_project_title: "YouTube-video",
+    first_project_title: "YouTube-video",
     first_project_desc:
       "Dynamische YouTube-video met 3D-animatie en motion graphics, cinematografische kleurcorrectie en meeslepend sound design. UI-elementen zijn gereconstrueerd en geanimeerd met Figma en Adobe Illustrator voor een professionele, platformgetrouwe presentatie.",
 
