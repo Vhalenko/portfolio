@@ -13,13 +13,13 @@ function copyToClipboard(element, message) {
 }
 
 phone.addEventListener("click", () => {
-  const lang = localStorage.getItem("lang") || "en";
+  const lang = sessionStorage.getItem("lang") || "en";
   const message = translations[lang].phone_copied;
   copyToClipboard(phone, message);
 });
 
 email.addEventListener("click", () => {
-  const lang = localStorage.getItem("lang") || "en";
+  const lang = sessionStorage.getItem("lang") || "en";
   const message = translations[lang].email_copied;
   copyToClipboard(email, message);
 });

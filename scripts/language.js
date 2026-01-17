@@ -15,5 +15,5 @@ window.setLanguage = function(lang) {
     }
   });
 
-  localStorage.setItem("lang", lang);
+  sessionStorage.setItem("lang", lang);
 }
