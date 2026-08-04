@@ -37,6 +37,16 @@ const translations = {
     fifth_project_desc:
       "Designed eye-catching YouTube thumbnails using Adobe Photoshop, focusing on strong visuals, clear typography, and composition that attracts clicks and reflects the video’s content and branding.",
 
+    sixth_project_title: "Educational Explainer Reel",
+    sixth_project_desc:
+      "Short-form reel breaking a concept into clear steps, with clean motion graphics, on-screen text, and tight pacing.",
+
+    seventh_project_title: "Savix VPN — Promo Animation",
+    seventh_project_desc:
+      "Animated promo spot blending 3D motion graphics and UI mockups to explain the product and drive sign-ups.",
+
+    personal_project: "Personal Project",
+
     freelance_project: "Freelance Project",
 
     /* Skills */
@@ -127,6 +137,16 @@ const translations = {
 
     freelance_project: "Фриланс-проект",
 
+    sixth_project_title: "Обучающий монтаж для Reels",
+    sixth_project_desc:
+      "Короткий обучающий ролик, разбивающий тему на понятные шаги, с чистой моушн-графикой, текстом на экране и точным ритмом монтажа.",
+
+    seventh_project_title: "Savix VPN — промо-анимация",
+    seventh_project_desc:
+      "Анимационный промо-ролик, сочетающий 3D-моушн-графику и макеты интерфейса, объясняющий продукт и стимулирующий регистрации.",
+
+    personal_project: "Личный проект",
+
     /* Skills */
     technical_skills: "Технические навыки",
     creative_skills: "Креативные навыки",
@@ -214,6 +234,16 @@ const translations = {
       "Ontwerp van opvallende YouTube-thumbnails in Adobe Photoshop, met focus op sterke visuals, duidelijke typografie en compositie die kliks aantrekt en de inhoud en branding van de video weerspiegelt.",
 
     freelance_project: "Freelance project",
+
+    sixth_project_title: "Educatieve Reels-montage",
+    sixth_project_desc:
+      "Korte educatieve reel die een concept in duidelijke stappen uitlegt, met strakke motion graphics, tekst in beeld en een strak tempo.",
+
+    seventh_project_title: "Savix VPN — Promo-animatie",
+    seventh_project_desc:
+      "Geanimeerde promo die 3D motion graphics en UI-mockups combineert om het product uit te leggen en aanmeldingen te stimuleren.",
+
+    personal_project: "Persoonlijk project",
 
     /* Skills */
     technical_skills: "Technische vaardigheden",

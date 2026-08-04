@@ -147,3 +147,68 @@
 .image-modal.show img {
   transform: scale(1);
 }
+
+/* Reset so a <button> looks identical to the <a>.video-card */
+button.video-card {
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* FULLSCREEN VIDEO */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.video-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.video-modal video {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  background: #000;
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.video-modal.show video {
+  transform: scale(1);
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease;
+}
+
+.video-modal-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+}

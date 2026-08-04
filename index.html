@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -148,6 +148,62 @@
         </article>
 
         <article class="card">
+          <button
+            type="button"
+            class="video-card"
+            data-video-src="assets/videos/reels-edit.mp4"
+            aria-label="Play video fullscreen"
+          >
+            <img
+              src="assets/images/reels-thumb.png"
+              alt="Project preview"
+              loading="lazy"
+            />
+            <span class="play-icon" aria-hidden="true"></span>
+          </button>
+
+          <h3 data-i18n="sixth_project_title">Educational Explainer Reel</h3>
+          <p data-i18n="sixth_project_desc">
+            Short-form reel breaking a concept into clear steps, with clean
+            motion graphics, on-screen text, and tight pacing.
+          </p>
+
+          <div class="meta">
+            <small class="tag" data-i18n="personal_project"
+              >Personal Project</small
+            >
+          </div>
+        </article>
+
+        <article class="card">
+          <button
+            type="button"
+            class="video-card"
+            data-video-src="assets/videos/savix-promo.mp4"
+            aria-label="Play video fullscreen"
+          >
+            <img
+              src="assets/images/promo-thumb.png"
+              alt="Project preview"
+              loading="lazy"
+            />
+            <span class="play-icon" aria-hidden="true"></span>
+          </button>
+
+          <h3 data-i18n="seventh_project_title">Savix VPN — Promo Animation</h3>
+          <p data-i18n="seventh_project_desc">
+            Animated promo spot blending 3D motion graphics and UI mockups to
+            explain the product and drive sign-ups.
+          </p>
+
+          <div class="meta">
+            <small class="tag" data-i18n="freelance_project"
+              >Freelance Project</small
+            >
+          </div>
+        </article>
+
+        <article class="card">
           <a
             href="https://www.tiktok.com/@fe4ther11/video/7587359443696831766"
             target="_blank"
@@ -243,10 +299,14 @@
             <div class="skill">DaVinci Resolve</div>
             <div class="skill">Figma</div>
             <div class="skill">Photoshop</div>
-            <div class="skill" data-i18n="codecs_and_formats">Codecs & Formats</div>
+            <div class="skill" data-i18n="codecs_and_formats">
+              Codecs & Formats
+            </div>
             <div class="skill" data-i18n="color_grading">Color Grading</div>
             <div class="skill" data-i18n="sound_design">Sound Design</div>
-            <div class="skill" data-i18n="workflow_optimization">Workflow Optimization</div>
+            <div class="skill" data-i18n="workflow_optimization">
+              Workflow Optimization
+            </div>
             <div class="skill" data-i18n="proxies">Proxies</div>
           </div>
 
@@ -341,6 +401,13 @@
       </footer>
       <div id="image-modal" class="image-modal" aria-hidden="true">
         <img id="modal-image" alt="Expanded preview" />
+      </div>
+
+      <div id="video-modal" class="video-modal" aria-hidden="true">
+        <button class="video-modal-close" aria-label="Close video">
+          &times;
+        </button>
+        <video id="modal-video" controls playsinline></video>
       </div>
 
       <p id="alert"></p>
